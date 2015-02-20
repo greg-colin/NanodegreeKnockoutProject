@@ -1,0 +1,471 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/J/publish/Resume/js/helper.js",
+			"settings":
+			{
+				"buffer_size": 9236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 3573,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/H/Github/udacity/NanodegreeKnockoutProject/index.html",
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/ajax-example.js",
+		"/J/publish/Resume/js/resumeBuilder.js",
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/app.js",
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/models/mapdatamodel.js",
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/views/mapviewmodel.js",
+		"/J/publish/API_Requests/index.html",
+		"/H/Github/udacity/greg-colin.github.io/README.md",
+		"/H/Github/udacity/greg-colin.github.io/views/pizza.html",
+		"/H/Github/udacity/greg-colin.github.io/views/js/main.js",
+		"/H/Github/udacity/greg-colin.github.io/views/js/main_min.js",
+		"/H/Github/udacity/submissions/P5/index.html",
+		"/H/Github/udacity/submissions/P5/js/views/mapviewmodel.js",
+		"/H/Github/udacity/submissions/P5/js/app.js",
+		"/H/Github/udacity/submissions/P5/js/models/mapdatamodel.js",
+		"/J/publish/Resume/js/helper.js",
+		"/H/Github/udacity/submissions/P5/js/views/mapview.js",
+		"/H/Github/udacity/submissions/P5/views/mapview.js",
+		"/H/Github/udacity/ud989-todo-app/index.html",
+		"/H/Github/udacity/submissions/P5/css/mapapp.css",
+		"/H/Github/udacity/ud989-todo-app/js/views/todo-view.js",
+		"/H/Github/udacity/ud989-todo-app/js/views/app-view.js",
+		"/H/Github/udacity/ud989-cat-clicker-ko-starter/js/app.js",
+		"/H/Github/udacity/ud989-todo-app/js/app.js",
+		"/H/Github/udacity/catclickerKO/js/app.js",
+		"/J/publish/Resume/index.html",
+		"/H/Github/udacity/ud989-todo-app/js/models/todo.js",
+		"/H/Github/udacity/catclickerKO/index.html",
+		"/H/Github/udacity/ud989-school-attendance/js/app.js",
+		"/H/Github/udacity/ud989-school-attendance/index.html",
+		"/H/Github/udacity/ud989-school-attendance/README.md",
+		"/H/Github/udacity/catclickerV2/js/catclickerV2.js",
+		"/H/Github/udacity/catclickerV2/css/style.css",
+		"/H/Github/udacity/catclickerV2/index.html",
+		"/H/Github/udacity/greg-colin.github.io/views/pizza_min.html",
+		"/H/Github/udacity/catclicker/js/catclicker.js",
+		"/C/Program Files (x86)/nxlog/conf/nxlog.conf",
+		"/H/Github/udacity/greg-colin.github.io/index.html",
+		"/H/Github/greg-colin.github.io/views/pizza.html",
+		"/H/Github/udacity/greg-colin.github.io/views/pizza_min.js",
+		"/H/Github/udacity/greg-colin.github.io/views/css/bootstrap-grid.css",
+		"/H/Github/udacity/loadCSS/loadCSS.js",
+		"/H/Github/udacity/loadCSS/README.md",
+		"/H/Github/udacity/greg-colin.github.io/project-mobile.html",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/js/perfmatters.js",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/index.html",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/README.md",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/views/js/main.js",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/.git/config",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/.git/description",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/.git/HEAD",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/.git/index",
+		"/H/Github/udacity/frontend-nanodegree-mobile-portfolio/.git/packed-refs",
+		"/H/Github/udacity/ud989-retain/index.html",
+		"/H/Github/udacity/ud989-retain/js/retain.js",
+		"/H/Github/udacity/catclicker/index.html",
+		"/H/Github/udacity/ud989-cat-clicker-andy/index.html",
+		"/H/Github/udacity/ud989-cat-clicker-andy/app.js",
+		"/H/Github/udacity/ud989-retain/css/retain.css",
+		"/H/Github/udacity/ud989-pizzamvo/index.html",
+		"/H/Github/udacity/ud989-pizzamvo/js/app.js",
+		"/H/Github/udacity/catclicker/css/style.css",
+		"/H/Github/udacity/catclicker/index2.html",
+		"/H/Github/udacity/catclicker - Copy/js/catclicker.js",
+		"/H/Github/udacity/catclicker/menutest2.html",
+		"/H/Github/udacity/catclicker/js/runnable.js",
+		"/H/Github/udacity/catclicker/css/runnable.css",
+		"/H/Github/udacity/catclicker/css/styles.css",
+		"/H/Github/udacity/catclicker/menutest.html",
+		"/H/Github/udacity/catclicker/js/resources.js",
+		"/H/Github/udacity/submissions-customized/P3/js/resources.js",
+		"/H/Github/udacity/submissions-customized/P3/index.html",
+		"/H/Github/udacity/submissions-customized/P3/js/app.js",
+		"/J/publish/Beginner-AJAX/index.html",
+		"/H/Github/udacity/submissions-customized/P1/index.html",
+		"/H/Github/udacity/minicourse-ajax-project/js/script2.js",
+		"/H/Github/udacity/minicourse-ajax-project/index2.html",
+		"/H/Github/udacity/minicourse-ajax-project/css/style.css",
+		"/J/publish/Portfolio/index.html",
+		"/J/publish/Frogger-Like-Game/js/test.js",
+		"/J/publish/Frogger-Like-Game/js/engine.js",
+		"/J/publish/Frogger-Like-Game/js/app.js",
+		"/H/Github/udacity/Udacity_AJAX_INIT/minicourse-ajax-project/css/style.css",
+		"/H/Github/udacity/minicourse-ajax-project/index.html",
+		"/H/Github/udacity/minicourse-ajax-project/js/script.js",
+		"/H/Github/useful-stuff/better-simple-slideshow/index.html",
+		"/H/Github/useful-stuff/bxslider-4/plugins/jquery.fitvids.js",
+		"/H/Github/useful-stuff/better-simple-slideshow/Gruntfile.js",
+		"/J/publish/Resume/css/style.css",
+		"/F/porn/test.pl",
+		"/H/Github/greg-colin.github.io/index.html",
+		"/H/Github/greg-colin.github.io/css/style.css",
+		"/H/Github/greg-colin.github.io/README.md",
+		"/H/Github/greg-colin.github.io/project-mobile.html",
+		"/H/Github/udacity/udportfolio/index.html",
+		"/H/Github/udacity/udportfolio/web.config",
+		"/H/Github/udacity/udportfolio/css/print.css",
+		"/H/Github/udacity/udportfolio/project-mobile.html",
+		"/H/Github/udacity/udportfolio/js/perfmatters.js",
+		"/H/Github/udacity/udportfolio/project-webperf.html",
+		"/H/Github/udacity/submissions/P1/index.html",
+		"/H/Github/udacity/submissions/P3/index.html",
+		"/H/Github/udacity/udportfolio/project-2048.html",
+		"/H/Github/udacity/udportfolio/views/pizza.html",
+		"/H/Github/udacity/udportfolio/views/css/style.css",
+		"/H/Github/udacity/udportfolio/css/style.css",
+		"/H/Github/udacity/udportfolio/views/js/main.js",
+		"/C/Windows/Minidump/073114-47424-01.dmp",
+		"/H/Github/udacity/HTML5-Canvas/index.html",
+		"/J/publish/sitewide/css/styles.css",
+		"/H/Github/udacity/frontend-nanodegree-resume/js/resumeBuilder.js",
+		"/H/Github/udacity/frontend-nanodegree-resume/js/helper.js",
+		"/H/Github/udacity/frontend-nanodegree-resume/index.html",
+		"/H/Github/udacity/frontend-nanodegree-arcade-game/js/app.js",
+		"/C/Windows/Logs/HomeGroup/homegrouplog.etl",
+		"/H/Github/udacity/submissions/P3/js/engine.js",
+		"/H/Github/udacity/submissions/P3/js/app.js",
+		"/H/Github/udacity/submissions/P3/README.md",
+		"/H/Github/udacity/submissions/P3/js/resources.js",
+		"/C/jsdoc-toolkit/templates/greg/allfiles.tmpl",
+		"/C/jsdoc-toolkit/templates/greg/static/header.html",
+		"/C/jsdoc-toolkit/templates/greg/class.tmpl",
+		"/H/Github/udacity/frontend-nanodegree-arcade-game/css/styles.css",
+		"/C/jsdoc-toolkit/templates/greg/symbol.tmpl",
+		"/C/jsdoc-toolkit/templates/greg/index.tmpl",
+		"/C/jsdoc-toolkit/templates/jsdoc/index.tmpl",
+		"/C/jsdoc-toolkit/templates/jsdoc/allclasses.tmpl",
+		"/C/jsdoc-toolkit/templates/greg/static/default.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"onchange",
+			"completed",
+			"checked",
+			"/*",
+			"clicks",
+			"Fluffy",
+			"render",
+			"@param",
+			"bootstrap-grid.css",
+			"randomPizzaContainer",
+			".render",
+			"push",
+			"document",
+			"form",
+			"loadData",
+			"Gruntfile",
+			"pizza_small.png",
+			"pizza.png",
+			"shit",
+			"location",
+			"places",
+			"callback",
+			"createMapMarker",
+			"new google.maps",
+			"google",
+			"google.maps",
+			"maps",
+			"characterNumber",
+			"audioUrls",
+			"prizeUrls",
+			"characterUrls",
+			"maxCharNum",
+			"prizeDrawYOffset",
+			"playerBoundWidth",
+			"playerBoundHeight",
+			"playerBoundRightOffset",
+			"playerBoundLeftOffset",
+			"playerBoundBottomOffset",
+			"playerBoundTopOffset",
+			"enemyBoundHeight",
+			"enemyBoundWidth",
+			"enemyBoundRightOffset",
+			"enemyBoundLeftOffset",
+			"enemyBoundBottomOffset",
+			"enemyBoundTopOffset",
+			"enemySpeedHigh",
+			"enemySpeedLow",
+			"boardWidthBoxes",
+			"playerHeight",
+			"playerWidth",
+			"enemyDrawYOffset",
+			"enemyHeight",
+			"enemyWidth",
+			"boxHeight",
+			"boxWidth",
+			"tileWidth",
+			"tileHeight",
+			"BackgroundAudio",
+			"audioon",
+			"level =",
+			"showbounding",
+			"setOffsets",
+			".play()",
+			"isBumpingAnyOther",
+			"win",
+			"canvas",
+			"ctx =",
+			"new Canvas",
+			"countdown = 5",
+			"characterNumber",
+			"level",
+			"//",
+			"&&",
+			"startBackground",
+			"playBackground",
+			"boxHeight",
+			"enemyDrawYOffset",
+			"update",
+			"resetGame",
+			"isReady",
+			"onReady",
+			"readyCallbacks",
+			"loading audio",
+			"??",
+			"onready",
+			".get",
+			"char-boy",
+			"borrows",
+			"readyCallbacks",
+			"loading",
+			"onload",
+			"Resources",
+			"relative",
+			"static",
+			"extends",
+			"BoundingRectangle",
+			"enemyDrawOffset",
+			"//",
+			"DOCTYPE",
+			"h4",
+			"h2",
+			"iframe",
+			"our code",
+			"googleMap",
+			"$(document)",
+			"top-contacts",
+			"skills-entry",
+			"skills-ent"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"AUDIO_URLS",
+			"PRIZE_URLS",
+			"CHARACTER_URLS",
+			"MAX_CHAR_NUM",
+			"PRIZE_DRAW_Y_OFFSET",
+			"PLAYER_BOUND_WIDTH",
+			"PLAYER_BOUND_HEIGHT",
+			"PLAYER_BOUND_RIGHT_OFFSET",
+			"PLAYER_BOUND_LEFT_OFFSET",
+			"PLAYER_BOUND_BOTTOM_OFFSET",
+			"PLAYER_BOUND_TOP_OFFSET",
+			"ENEMY_BOUND_HEIGHT",
+			"ENEMY_BOUND_WIDTH",
+			"ENEMY_BOUND_RIGHT_OFFSET",
+			"ENEMY_BOUND_LEFT_OFFSET",
+			"ENEMY_BOUND_BOTTOM_OFFSET",
+			"ENEMY_BOUND_TOP_OFFSET",
+			"ENEMY_SPEED_HIGH",
+			"ENEMY_SPEED_LOW",
+			"BOARD_WIDTH_BOXES",
+			"PLAYER_HEIGHT",
+			"PLAYER_WIDTH",
+			"ENEMY_DRAW_Y_OFFSET",
+			"ENEMY_HEIGHT",
+			"ENEMY_WIDTH",
+			"BOX_HEIGHT",
+			"BOX_WIDTH",
+			"TILE_WIDTH",
+			"TILE_HEIGHT",
+			"GameRectangle"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/J/publish/Resume/js/helper.js",
+					"settings":
+					{
+						"buffer_size": 9236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7001,
+								6756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 3573,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 28.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

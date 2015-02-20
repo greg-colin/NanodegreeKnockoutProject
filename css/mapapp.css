@@ -1,0 +1,9 @@
+body {
+	background-color: #a0a0a0;
+}
+
+#map-div {
+	width: 700px;
+	height: 700px;
+	background-color: #ffffff;
+}
