@@ -31,13 +31,20 @@ var MapViewModel = function() {
       icon: iconBase + 'purple_MarkerA.png',
       title: venue.name
     });
+
     var infoWindow = new google.maps.InfoWindow({
       content: "This is: " + venue.name
     });
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
+      console.log(infoWindow);
+      marker.setIcon(iconBase + 'red_MarkerA.png');
       infoWindow.open(map, marker);
+    });
+
+    google.maps.event.addListener(infoWindow, 'closeclick', function() {
+      marker.setIcon(iconBase + 'purple_MarkerA.png');
     });
     mapMarkers().push(marker);
   }
