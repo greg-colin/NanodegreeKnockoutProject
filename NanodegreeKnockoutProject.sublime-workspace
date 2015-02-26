@@ -40,6 +40,7 @@
 	},
 	"file_history":
 	[
+		"/J/publish/appt.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/css/mapapp.css",
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/app.js",
 		"/J/publish/Resume/js/helper.js",
@@ -166,8 +167,7 @@
 		"/H/Github/udacity/frontend-nanodegree-arcade-game/css/styles.css",
 		"/C/jsdoc-toolkit/templates/greg/symbol.tmpl",
 		"/C/jsdoc-toolkit/templates/greg/index.tmpl",
-		"/C/jsdoc-toolkit/templates/jsdoc/index.tmpl",
-		"/C/jsdoc-toolkit/templates/jsdoc/allclasses.tmpl"
+		"/C/jsdoc-toolkit/templates/jsdoc/index.tmpl"
 	],
 	"find":
 	{
