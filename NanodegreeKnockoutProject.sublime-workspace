@@ -11,7 +11,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 3794,
+				"buffer_size": 4374,
 				"line_ending": "Windows"
 			}
 		}
@@ -40,8 +40,10 @@
 	},
 	"file_history":
 	[
-		"/J/publish/appt.html",
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/sample-json.txt",
+		"/J/publish/Gregs-Portal/index.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/css/mapapp.css",
+		"/J/publish/appt.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/app.js",
 		"/J/publish/Resume/js/helper.js",
 		"/H/Github/udacity/NanodegreeKnockoutProject/index.html",
@@ -165,9 +167,7 @@
 		"/C/jsdoc-toolkit/templates/greg/static/header.html",
 		"/C/jsdoc-toolkit/templates/greg/class.tmpl",
 		"/H/Github/udacity/frontend-nanodegree-arcade-game/css/styles.css",
-		"/C/jsdoc-toolkit/templates/greg/symbol.tmpl",
-		"/C/jsdoc-toolkit/templates/greg/index.tmpl",
-		"/C/jsdoc-toolkit/templates/jsdoc/index.tmpl"
+		"/C/jsdoc-toolkit/templates/greg/symbol.tmpl"
 	],
 	"find":
 	{
@@ -185,6 +185,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"createmapmarker",
 			"InfoWindow",
 			"onchange",
 			"completed",
@@ -349,15 +350,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 3794,
+						"buffer_size": 4374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1546,
-								1546
+								759,
+								759
 							]
 						],
 						"settings":
@@ -367,7 +368,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 220.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

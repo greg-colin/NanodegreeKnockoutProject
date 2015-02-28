@@ -1,0 +1,1969 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "venues":[
+         {
+            "id":"43a48db8f964a5204d2c1fe3",
+            "name":"Nintendo World",
+            "contact":{
+               "phone":"6464590800",
+               "formattedPhone":"(646) 459-0800",
+               "twitter":"nintendo_world",
+               "facebook":"119240841493711",
+               "facebookUsername":"Nintendo",
+               "facebookName":"Nintendo"
+            },
+            "location":{
+               "address":"10 Rockefeller Plz",
+               "crossStreet":"at W 48th St",
+               "lat":40.758505337427664,
+               "lng":-73.97948741912842,
+               "distance":26,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "10 Rockefeller Plz (at W 48th St)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d10b951735",
+                  "name":"Video Game Store",
+                  "pluralName":"Video Game Stores",
+                  "shortName":"Video Games",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/shops/videogames_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":20109,
+               "usersCount":14519,
+               "tipCount":133
+            },
+            "url":"http://www.nintendoworldstore.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":1,
+               "summary":"One person is checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":1,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"49b79f54f964a5202c531fe3",
+            "name":"Rockefeller Center",
+            "contact":{
+               "phone":"2123326868",
+               "formattedPhone":"(212) 332-6868",
+               "twitter":"rockcenternyc",
+               "facebook":"173429212678086",
+               "facebookUsername":"rockefellercenternyc",
+               "facebookName":"Rockefeller Center"
+            },
+            "location":{
+               "address":"Rockefeller Plaza",
+               "crossStreet":"btwn 50th & 51st St",
+               "lat":40.75875657405104,
+               "lng":-73.97855217526512,
+               "distance":57,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "Rockefeller Plaza (btwn 50th & 51st St)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d164941735",
+                  "name":"Plaza",
+                  "pluralName":"Plazas",
+                  "shortName":"Plaza",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/parks_outdoors/plaza_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":181818,
+               "usersCount":118009,
+               "tipCount":546
+            },
+            "url":"http://www.rockefellercenter.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":7,
+               "summary":"7 people are checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":7,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "venuePage":{
+               "id":"33950109"
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4b58c03df964a5201d6928e3",
+            "name":"30 Rockefeller Plaza",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"at W 49th St",
+               "lat":40.75876780731438,
+               "lng":-73.97939010815077,
+               "distance":24,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (at W 49th St)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d130941735",
+                  "name":"Building",
+                  "pluralName":"Buildings",
+                  "shortName":"Building",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":42772,
+               "usersCount":22251,
+               "tipCount":79
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"43a48f1bf964a520502c1fe3",
+            "name":"Top of The Rock Observation Deck",
+            "contact":{
+               "phone":"2123326868",
+               "formattedPhone":"(212) 332-6868",
+               "twitter":"rockcenternyc",
+               "facebook":"108793907292",
+               "facebookUsername":"TopOfTheRockNYC",
+               "facebookName":"Top Of The Rock NYC"
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"btwn 5th & 6th Ave",
+               "lat":40.75903357413162,
+               "lng":-73.97933721542358,
+               "distance":49,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (btwn 5th & 6th Ave)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d165941735",
+                  "name":"Scenic Lookout",
+                  "pluralName":"Scenic Lookouts",
+                  "shortName":"Scenic Lookout",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/parks_outdoors/sceniclookout_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":47028,
+               "usersCount":42461,
+               "tipCount":484
+            },
+            "url":"http://www.topoftherocknyc.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":3,
+               "summary":"3 people are checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":3,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "venuePage":{
+               "id":"33950115"
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4f5e82dae4b01989c438cbb6",
+            "name":"Blue Bottle Coffee",
+            "contact":{
+               "phone":"5106533394",
+               "formattedPhone":"(510) 653-3394",
+               "twitter":"bluebottlerock"
+            },
+            "location":{
+               "address":"1 Rockefeller Plz",
+               "crossStreet":"at W 49th St",
+               "lat":40.75866518631161,
+               "lng":-73.97882192118166,
+               "distance":32,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "1 Rockefeller Plz (at W 49th St)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e0931735",
+                  "name":"Coffee Shop",
+                  "pluralName":"Coffee Shops",
+                  "shortName":"Coffee Shop",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":10941,
+               "usersCount":4325,
+               "tipCount":128
+            },
+            "url":"http://www.bluebottlecoffee.net",
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"https://bluebottlecoffee.com",
+               "mobileUrl":"https://bluebottlecoffee.com",
+               "externalUrl":"https://bluebottlecoffee.com"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":1,
+               "summary":"One person is checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":1,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4b01674af964a5205e4222e3",
+            "name":"TODAY Show",
+            "contact":{
+               "phone":"2126643806",
+               "formattedPhone":"(212) 664-3806",
+               "twitter":"todayshow"
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"btwn 48th & 49th St. & 5th & 6th Ave.",
+               "lat":40.75848906765483,
+               "lng":-73.9793662095376,
+               "distance":18,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (btwn 48th & 49th St. & 5th & 6th Ave.)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"52e81612bcbc57f1066b7a31",
+                  "name":"TV Station",
+                  "pluralName":"TV Stations",
+                  "shortName":"TV Station",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":61894,
+               "usersCount":20747,
+               "tipCount":212
+            },
+            "url":"http://www.today.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"55472175"
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4d8b726dd85f370461e114dc",
+            "name":"Bouchon Bakery",
+            "contact":{
+               "phone":"2127823890",
+               "formattedPhone":"(212) 782-3890",
+               "twitter":"tk_rg"
+            },
+            "location":{
+               "address":"1 Rockefeller Plz",
+               "crossStreet":"at W 49th St",
+               "lat":40.758550972716904,
+               "lng":-73.97883913899327,
+               "distance":30,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "1 Rockefeller Plz (at W 49th St)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d16a941735",
+                  "name":"Bakery",
+                  "pluralName":"Bakeries",
+                  "shortName":"Bakery",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":10322,
+               "usersCount":6861,
+               "tipCount":108
+            },
+            "url":"http://tkrg.com",
+            "hasMenu":true,
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"https://foursquare.com/v/bouchon-bakery/4d8b726dd85f370461e114dc/menu",
+               "mobileUrl":"https://foursquare.com/v/4d8b726dd85f370461e114dc/device_menu"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a9c58faf964a520e13620e3",
+            "name":"NBCUniversal",
+            "contact":{
+               "phone":"2126644444",
+               "formattedPhone":"(212) 664-4444",
+               "twitter":"nbcuniversal"
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"btwn W 49th & 50th St",
+               "lat":40.75911137894531,
+               "lng":-73.97954506794183,
+               "distance":63,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (btwn W 49th & 50th St)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "shortName":"Office",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":34475,
+               "usersCount":10861,
+               "tipCount":45
+            },
+            "url":"http://nbcuniversal.tumblr.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":1,
+               "summary":"One person is checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":1,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4b83ed22f964a520f81631e3",
+            "name":"USA Network",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"21st Floor",
+               "lat":40.75877417304967,
+               "lng":-73.97895392436462,
+               "distance":28,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (21st Floor)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "shortName":"Office",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3321,
+               "usersCount":193,
+               "tipCount":3
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"50b4edace4b020fc3ddb3ffa",
+            "name":"Studio 9C - NBCUniversal",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "lat":40.75915082630121,
+               "lng":-73.97911462376938,
+               "distance":61,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d16d941735",
+                  "name":"Café",
+                  "pluralName":"Cafés",
+                  "shortName":"Café",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3262,
+               "usersCount":536,
+               "tipCount":10
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4afb2cd1f964a520c81b22e3",
+            "name":"The Today Show Offices",
+            "contact":{
+               "phone":"2126644602",
+               "formattedPhone":"(212) 664-4602",
+               "twitter":"todayshow"
+            },
+            "location":{
+               "address":"30 Rockefeller Plaza, 3rd floor east",
+               "crossStreet":"between 5th and 6th",
+               "lat":40.7584578853351,
+               "lng":-73.9788965316875,
+               "distance":30,
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plaza, 3rd floor east (between 5th and 6th)",
+                  "New York, NY",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "shortName":"Office",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":8942,
+               "usersCount":1507,
+               "tipCount":3
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"45ca42e1f964a5207a421fe3",
+            "name":"NBC Experience Store",
+            "contact":{
+               "phone":"2126643700",
+               "formattedPhone":"(212) 664-3700"
+            },
+            "location":{
+               "address":"30 Rockefeller Plaza",
+               "crossStreet":"at 49th St",
+               "lat":40.75878778569354,
+               "lng":-73.9789252280282,
+               "distance":31,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plaza (at 49th St)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d128951735",
+                  "name":"Gift Shop",
+                  "pluralName":"Gift Shops",
+                  "shortName":"Gift Shop",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/shops/giftshop_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":16774,
+               "usersCount":13129,
+               "tipCount":61
+            },
+            "url":"http://www.nbcuniversalstore.com",
+            "specials":{
+               "count":1,
+               "items":[
+                  {
+                     "id":"512b7d4f7043972a745b4f7e",
+                     "type":"frequency",
+                     "message":"Check in and get any two full-priced t-shirts for $46!\n\nUnlocked every check-in. Please show check-in to cashier at check-out for the savings. Wait... do I check-in or check-out...what?",
+                     "description":"",
+                     "finePrint":"Please show check-in to cashier at check-out for the savings. Wait... do I check-in or check-out...what?  Your know how it works!",
+                     "unlocked":true,
+                     "icon":"default",
+                     "title":"Special",
+                     "state":"unlocked",
+                     "provider":"foursquare",
+                     "redemption":"webview",
+                     "interaction":{
+                        "entryUrl":"https://foursquare.com/device/specials/512b7d4f7043972a745b4f7e?venueId=45ca42e1f964a5207a421fe3"
+                     },
+                     "page":{
+                        "id":"45908478",
+                        "firstName":"NBC Experience Store",
+                        "gender":"none",
+                        "photo":{
+                           "prefix":"https://irs0.4sqi.net/img/user/",
+                           "suffix":"/45908478-M0D40RLY12FZEDAP.png"
+                        },
+                        "type":"venuePage",
+                        "venue":{
+                           "id":"45ca42e1f964a5207a421fe3"
+                        },
+                        "tips":{
+                           "count":2
+                        },
+                        "homeCity":"New York, NY",
+                        "bio":"",
+                        "contact":{
+
+                        }
+                     }
+                  }
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"45908478"
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a19d1edf964a5205a7a1fe3",
+            "name":"The Halal Guys",
+            "contact":{
+               "phone":"3475271505",
+               "formattedPhone":"(347) 527-1505",
+               "twitter":"halalguys"
+            },
+            "location":{
+               "address":"W 53rd St",
+               "crossStreet":"at 6th Ave",
+               "lat":40.76182508247163,
+               "lng":-73.97930401932398,
+               "distance":359,
+               "postalCode":"10019",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "W 53rd St (at 6th Ave)",
+                  "New York, NY 10019",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1cb941735",
+                  "name":"Food Truck",
+                  "pluralName":"Food Trucks",
+                  "shortName":"Food Truck",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/streetfood_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":49978,
+               "usersCount":24226,
+               "tipCount":545
+            },
+            "url":"http://53rdand6th.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"47491332"
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"5486417c498e70cd7c9225af",
+            "name":"The Filling Station",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "lat":40.75858567012738,
+               "lng":-73.97914905933864,
+               "distance":4,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"52f2ab2ebcbc57f1066b8b2c",
+                  "name":"Herbs & Spices Store",
+                  "pluralName":"Herbs & Spices Stores",
+                  "shortName":"Herbs & Spices Store",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/shops/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":6,
+               "usersCount":6,
+               "tipCount":0
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4fc7f55fe4b0896b9f0a16aa",
+            "name":"LOFT",
+            "contact":{
+               "phone":"2127574408",
+               "formattedPhone":"(212) 757-4408"
+            },
+            "location":{
+               "address":"1230 Avenue of the Americas",
+               "crossStreet":"49th St",
+               "lat":40.758419,
+               "lng":-73.979836,
+               "distance":57,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "1230 Avenue of the Americas (49th St)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d103951735",
+                  "name":"Clothing Store",
+                  "pluralName":"Clothing Stores",
+                  "shortName":"Apparel",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/shops/apparel_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":638,
+               "usersCount":346,
+               "tipCount":2
+            },
+            "url":"http://www.loft.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a69cdbbf964a52011cc1fe3",
+            "name":"DIRECTV",
+            "contact":{
+
+            },
+            "location":{
+               "address":"1 Rockefeller Plz",
+               "crossStreet":"49th street",
+               "lat":40.75832870607821,
+               "lng":-73.97906297040392,
+               "distance":32,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "1 Rockefeller Plz (49th street)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "shortName":"Office",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3175,
+               "usersCount":237,
+               "tipCount":2
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4bc9e211fb84c9b6d8cb1b3e",
+            "name":"Starbucks",
+            "contact":{
+               "phone":"2125860914",
+               "formattedPhone":"(212) 586-0914",
+               "twitter":"starbucks",
+               "facebook":"22092443056",
+               "facebookUsername":"Starbucks",
+               "facebookName":"Starbucks"
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"at Rockefeller Center Concourse",
+               "lat":40.758717036096215,
+               "lng":-73.97873583210047,
+               "distance":41,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (at Rockefeller Center Concourse)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e0931735",
+                  "name":"Coffee Shop",
+                  "pluralName":"Coffee Shops",
+                  "shortName":"Coffee Shop",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":13500,
+               "usersCount":5667,
+               "tipCount":34
+            },
+            "url":"http://www.starbucks.com/store/11153/",
+            "hasMenu":true,
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"https://foursquare.com/v/starbucks/4bc9e211fb84c9b6d8cb1b3e/menu",
+               "mobileUrl":"https://foursquare.com/v/4bc9e211fb84c9b6d8cb1b3e/device_menu",
+               "externalUrl":"http://www.starbucks.com/menu"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "storeId":"7443",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"5218e1fe11d22403d8d32cf5",
+            "name":"NBC",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"49th And 50th",
+               "lat":40.75868474612627,
+               "lng":-73.97899409922839,
+               "distance":19,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (49th And 50th)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1f1931735",
+                  "name":"General Entertainment",
+                  "pluralName":"General Entertainment",
+                  "shortName":"Entertainment",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":523,
+               "usersCount":423,
+               "tipCount":5
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4e712b1ad22d24bc61661205",
+            "name":"Haynes and Boone LLP",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"49th Street",
+               "lat":40.75866170632641,
+               "lng":-73.97929254081083,
+               "distance":10,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (49th Street)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d127941735",
+                  "name":"Conference Room",
+                  "pluralName":"Conference Rooms",
+                  "shortName":"Conference room",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/office_conferenceroom_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":7,
+               "usersCount":5,
+               "tipCount":0
+            },
+            "hasMenu":true,
+            "menu":{
+               "type":"Services",
+               "label":"Services",
+               "anchor":"View Services",
+               "url":"https://foursquare.com/v/haynes-and-boone-llp/4e712b1ad22d24bc61661205/menu",
+               "mobileUrl":"https://foursquare.com/v/4e712b1ad22d24bc61661205/device_menu"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4e1b4323813054984349214d",
+            "name":"Potbelly Sandwich Shop",
+            "contact":{
+               "phone":"6462894203",
+               "formattedPhone":"(646) 289-4203",
+               "twitter":"potbelly",
+               "facebook":"6919504147",
+               "facebookUsername":"potbellysandwichshop",
+               "facebookName":"Potbelly Sandwich Shop"
+            },
+            "location":{
+               "address":"30 Rockefeller Center",
+               "lat":40.7588954203221,
+               "lng":-73.9793586730957,
+               "distance":35,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Center",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1c5941735",
+                  "name":"Sandwich Place",
+                  "pluralName":"Sandwich Places",
+                  "shortName":"Sandwiches",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/deli_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":5035,
+               "usersCount":1894,
+               "tipCount":27
+            },
+            "url":"http://www.potbelly.com",
+            "delivery":{
+               "url":"http://www.seamless.com/food-delivery/restaurant.26520.r?a=1026&utm_source=Foursquare&utm_medium=affiliate&utm_campaign=SeamlessOrderDeliveryLink",
+               "provider":{
+                  "name":"seamless"
+               }
+            },
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"http://potbelly.com/Food/OurMenu.aspx?subPage=Sandwiches",
+               "mobileUrl":"http://potbelly.com/Food/OurMenu.aspx?subPage=Sandwiches",
+               "externalUrl":"http://potbelly.com/Food/OurMenu.aspx?subPage=Sandwiches"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "storeId":"254",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"5017f5f5e4b0781bc158f1ef",
+            "name":"Deloitte",
+            "contact":{
+
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "crossStreet":"50th street",
+               "lat":40.75897761022355,
+               "lng":-73.9793097585803,
+               "distance":43,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz (50th street)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "shortName":"Office",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":1856,
+               "usersCount":360,
+               "tipCount":0
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a705a19f964a5204ed71fe3",
+            "name":"Equinox",
+            "contact":{
+               "phone":"2122188600",
+               "formattedPhone":"(212) 218-8600",
+               "twitter":"equinox"
+            },
+            "location":{
+               "address":"45 Rockefeller Plaza",
+               "lat":40.75915,
+               "lng":-73.978449,
+               "distance":88,
+               "postalCode":"10111",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "45 Rockefeller Plaza",
+                  "New York, NY 10111",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d175941735",
+                  "name":"Gym / Fitness Center",
+                  "pluralName":"Gyms or Fitness Centers",
+                  "shortName":"Gym / Fitness",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/gym_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":14049,
+               "usersCount":1876,
+               "tipCount":29
+            },
+            "url":"http://www.facebook.com/equinox",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"51c07d42b5896d0c80c52c01",
+            "name":"Auntie Anne's",
+            "contact":{
+               "phone":"2122458555",
+               "formattedPhone":"(212) 245-8555"
+            },
+            "location":{
+               "address":"30 Rockefeller Plaza - Lower Concourse",
+               "lat":40.75871785110477,
+               "lng":-73.979476196939,
+               "distance":26,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plaza - Lower Concourse",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1c7941735",
+                  "name":"Snack Place",
+                  "pluralName":"Snack Places",
+                  "shortName":"Snacks",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/food/snacks_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":581,
+               "usersCount":347,
+               "tipCount":5
+            },
+            "url":"http://www.auntieannes.com",
+            "hasMenu":true,
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"https://foursquare.com/v/auntie-annes/51c07d42b5896d0c80c52c01/menu",
+               "mobileUrl":"https://foursquare.com/v/51c07d42b5896d0c80c52c01/device_menu"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"52b4acfc11d24ad48d3ea2bf",
+            "name":"#nerdland",
+            "contact":{
+               "twitter":"mhpshow"
+            },
+            "location":{
+               "address":"30 Rockefeller Plz",
+               "lat":40.7586434920479,
+               "lng":-73.97900462150574,
+               "distance":17,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plz",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d174941735",
+                  "name":"Coworking Space",
+                  "pluralName":"Coworking Spaces",
+                  "shortName":"Coworking Space",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/building/office_coworkingspace_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":165,
+               "usersCount":3,
+               "tipCount":0
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4c6160cade6920a162219864",
+            "name":"NBC Studio Tour",
+            "contact":{
+               "phone":"2126643208",
+               "formattedPhone":"(212) 664-3208",
+               "twitter":"nbcstudiotour",
+               "facebook":"176413765742819",
+               "facebookName":"NBC Studio Tour"
+            },
+            "location":{
+               "address":"30 Rockefeller Plaza",
+               "crossStreet":"49th Street between 5th and 6th Avenue",
+               "lat":40.75879505439302,
+               "lng":-73.97933845485933,
+               "distance":24,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "30 Rockefeller Plaza (49th Street between 5th and 6th Avenue)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1f1931735",
+                  "name":"General Entertainment",
+                  "pluralName":"General Entertainment",
+                  "shortName":"Entertainment",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":2588,
+               "usersCount":2303,
+               "tipCount":32
+            },
+            "url":"http://www.nbcstudiotour.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"76111074"
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4af5a46af964a520b5fa21e3",
+            "name":"Museum of Modern Art (MoMA)",
+            "contact":{
+               "phone":"2127089400",
+               "formattedPhone":"(212) 708-9400",
+               "twitter":"museummodernart"
+            },
+            "location":{
+               "address":"11 W 53rd St",
+               "crossStreet":"btwn 5th & 6th Ave",
+               "lat":40.761396839011994,
+               "lng":-73.97698574930376,
+               "distance":363,
+               "postalCode":"10019",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "11 W 53rd St (btwn 5th & 6th Ave)",
+                  "New York, NY 10019",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d18f941735",
+                  "name":"Art Museum",
+                  "pluralName":"Art Museums",
+                  "shortName":"Art Museum",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":171882,
+               "usersCount":117316,
+               "tipCount":1314
+            },
+            "url":"http://www.moma.org",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":25,
+               "summary":"25 people are checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":25,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a43f5a8f964a520fba61fe3",
+            "name":"Morrell & Company Wine & Spirits Store",
+            "contact":{
+               "phone":"2126889370",
+               "formattedPhone":"(212) 688-9370",
+               "twitter":"morrellwine"
+            },
+            "location":{
+               "address":"1 Rockefeller Plz",
+               "crossStreet":"at 49th St b/t 5th and 6th Ave",
+               "lat":40.75829404157074,
+               "lng":-73.97862911224365,
+               "distance":58,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "1 Rockefeller Plz (at 49th St b/t 5th and 6th Ave)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d119951735",
+                  "name":"Wine Shop",
+                  "pluralName":"Wine Shops",
+                  "shortName":"Wine Shop",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/shops/food_wineshop_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":470,
+               "usersCount":364,
+               "tipCount":11
+            },
+            "url":"http://morrellwine.com",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"81786485"
+            },
+            "storeId":"",
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4a0ad308f964a520ad741fe3",
+            "name":"Christie's",
+            "contact":{
+               "phone":"2126362000",
+               "formattedPhone":"(212) 636-2000",
+               "twitter":"christiesinc"
+            },
+            "location":{
+               "address":"20 Rockefeller Plaza",
+               "crossStreet":"btwn 5th & 6th Ave",
+               "lat":40.75868412570508,
+               "lng":-73.97996485233307,
+               "distance":65,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "20 Rockefeller Plaza (btwn 5th & 6th Ave)",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e2931735",
+                  "name":"Art Gallery",
+                  "pluralName":"Art Galleries",
+                  "shortName":"Art Gallery",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/arts_entertainment/artgallery_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":6653,
+               "usersCount":3268,
+               "tipCount":19
+            },
+            "url":"http://www.christies.com",
+            "hasMenu":true,
+            "menu":{
+               "type":"Menu",
+               "label":"Menu",
+               "anchor":"View Menu",
+               "url":"https://foursquare.com/v/christies/4a0ad308f964a520ad741fe3/menu",
+               "mobileUrl":"https://foursquare.com/v/4a0ad308f964a520ad741fe3/device_menu"
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":1,
+               "summary":"One person is checked in here",
+               "groups":[
+                  {
+                     "type":"others",
+                     "name":"Other people here",
+                     "count":1,
+                     "items":[
+
+                     ]
+                  }
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"52cc8876498ee82ec3ef5fbc",
+            "name":"Northwestern University Office",
+            "contact":{
+
+            },
+            "location":{
+               "address":"10 Rockefeller Plz",
+               "lat":40.758595,
+               "lng":-73.979036,
+               "distance":13,
+               "postalCode":"10020",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "10 Rockefeller Plz",
+                  "New York, NY 10020",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d197941735",
+                  "name":"College Administrative Building",
+                  "pluralName":"College Administrative Buildings",
+                  "shortName":"Administrative Building",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/education/administrativebuilding_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":6,
+               "usersCount":3,
+               "tipCount":0
+            },
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "referralId":"v-1425152634"
+         },
+         {
+            "id":"4cb21079aef16dcb977bbe54",
+            "name":"The Rink at Rockefeller Center",
+            "contact":{
+               "twitter":"rockcenterrink",
+               "facebook":"370094493073055",
+               "facebookUsername":"TheRinkAtRockCenter",
+               "facebookName":"The Rink at Rockefeller Center"
+            },
+            "location":{
+               "address":"Rockefeller Center",
+               "crossStreet":"btwn W 49th & 50th",
+               "lat":40.75818903109753,
+               "lng":-73.97850899615459,
+               "distance":74,
+               "postalCode":"10112",
+               "cc":"US",
+               "city":"New York",
+               "state":"NY",
+               "country":"United States",
+               "formattedAddress":[
+                  "Rockefeller Center (btwn W 49th & 50th)",
+                  "New York, NY 10112",
+                  "United States"
+               ]
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d168941735",
+                  "name":"Skating Rink",
+                  "pluralName":"Skating Rinks",
+                  "shortName":"Skating Rink",
+                  "icon":{
+                     "prefix":"https://ss3.4sqi.net/img/categories_v2/parks_outdoors/skatingrink_",
+                     "suffix":".png"
+                  },
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":6181,
+               "usersCount":5615,
+               "tipCount":19
+            },
+            "url":"http://www.patinagroup.com/restaurant.php?restaurants_id=74",
+            "specials":{
+               "count":0,
+               "items":[
+
+               ]
+            },
+            "hereNow":{
+               "count":0,
+               "summary":"Nobody here",
+               "groups":[
+
+               ]
+            },
+            "venuePage":{
+               "id":"72332005"
+            },
+            "referralId":"v-1425152634"
+         }
+      ],
+      "confident":false
+   }
+}
+About
