@@ -7,3 +7,24 @@ body {
 	height: 100%;
 	background-color: #ffffff;
 }
+
+.map-search {
+	margin-left: 16px;
+	margin-top: 16px;
+	width: 15%;
+}
+
+.no-side-margins {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important ;
+}
+
+#controlUI {
+	left: 16px !important;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 16px;
+    background-color: #f7f7f7;
+}

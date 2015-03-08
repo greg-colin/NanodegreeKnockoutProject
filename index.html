@@ -1,16 +1,24 @@
 <html>
 <head>
 	<title>Nanodegree Project 5</title>
+	<link rel="stylesheet"  type="text/css" href="css/bootstrap.min.css"></link>
 	<link rel="stylesheet"  type="text/css" href="css/mapapp.css"></link>
 </head>
 <body>
+	<input id="textinput" class="map-search" type="text" placeholder="Search for a new location">
+	<div id="controlUI">
+		<select id="selectbox" class="no-side-margins" size="10" data-bind="foreach: foursquareVenues">
+			<option data-bind="text: $data.name"></option>
+		</select>
+	</div>
+
 	<div id="map-div">
 	</div>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
-	<p />
-	<div id="venues"></div>
+	</div>
 </body>
 </html>

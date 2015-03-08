@@ -11,7 +11,31 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 4374,
+				"buffer_size": 5689,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/mapapp.css",
+			"settings":
+			{
+				"buffer_size": 464,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/sample-json.txt",
+			"settings":
+			{
+				"buffer_size": 61504,
 				"line_ending": "Windows"
 			}
 		}
@@ -41,6 +65,7 @@
 	"file_history":
 	[
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/sample-json.txt",
+		"/J/publish/Portfolio/index.html",
 		"/J/publish/Gregs-Portal/index.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/css/mapapp.css",
 		"/J/publish/appt.html",
@@ -122,7 +147,6 @@
 		"/H/Github/udacity/minicourse-ajax-project/js/script2.js",
 		"/H/Github/udacity/minicourse-ajax-project/index2.html",
 		"/H/Github/udacity/minicourse-ajax-project/css/style.css",
-		"/J/publish/Portfolio/index.html",
 		"/J/publish/Frogger-Like-Game/js/test.js",
 		"/J/publish/Frogger-Like-Game/js/engine.js",
 		"/J/publish/Frogger-Like-Game/js/app.js",
@@ -185,6 +209,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"self",
+			"currentMarker",
+			"position",
 			"createmapmarker",
 			"InfoWindow",
 			"onchange",
@@ -342,7 +369,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -350,15 +377,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 4374,
+						"buffer_size": 5689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								759,
-								759
+								1465,
+								1465
 							]
 						],
 						"settings":
@@ -368,7 +395,88 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 140.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/mapapp.css",
+					"settings":
+					{
+						"buffer_size": 464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								360
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/sample-json.txt",
+					"settings":
+					{
+						"buffer_size": 61504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
