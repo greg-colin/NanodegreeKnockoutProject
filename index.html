@@ -5,8 +5,10 @@
 	<link rel="stylesheet"  type="text/css" href="css/mapapp.css"></link>
 </head>
 <body>
-	<input id="textinput" class="map-search" type="text" placeholder="Search for a new location">
+	
 	<div id="controlUI">
+		<input id="textinput" class="map-search" type="text" placeholder="Search...">
+		<p>
 		<select id="selectbox" class="no-side-margins" size="10" data-bind="foreach: foursquareVenues">
 			<option data-bind="text: $data.name"></option>
 		</select>

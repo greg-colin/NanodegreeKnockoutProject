@@ -117,8 +117,8 @@ var MapViewModel = function() {
 
     self.map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
 
-    var textinput = (document.getElementById('textinput'));
-    self.map.controls[google.maps.ControlPosition.TOP_LEFT].push(textinput);
+    //var textinput = (document.getElementById('textinput'));
+    //self.map.controls[google.maps.ControlPosition.TOP_LEFT].push(textinput);
 
     var controlUI = (document.getElementById('controlUI'));
     self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);

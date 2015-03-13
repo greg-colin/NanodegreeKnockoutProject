@@ -28,3 +28,8 @@ body {
     margin-bottom: 16px;
     background-color: #f7f7f7;
 }
+
+#textinput {
+	margin-left: 0px;
+	width: 200px;
+}
