@@ -10,6 +10,7 @@ var MapViewModel = function() {
   var userLat = ko.observable(40.7586);
   var userLong = ko.observable(-73.9792);
   var myLocation = new google.maps.LatLng(userLat(), userLong());
+  this.searchQuery = ko.observable();
   this.foursquareVenues = ko.observableArray([]);
   this.mapMarkers = ko.observableArray([]);
   this.myLocationMarker = ko.observable();
@@ -28,6 +29,22 @@ var MapViewModel = function() {
       this.marker.setIcon(iconBase + 'purple_MarkerA.png');
     });
   };
+
+  self.search = function(value) {
+    console.log("Search function called");
+  }
+
+  self.selectChange = function(event) {
+    console.log("Selection change:");
+    console.log(event.srcElement.value);
+    self.unflagAllMarkers();
+    $.each(self.mapMarkers(), function() {
+      console.log(this.marker);
+      if (this.marker.title == event.srcElement.value) {
+        this.marker.setIcon(iconBase + 'blue_MarkerA.png');
+      }
+    });
+  }
 
   self.getVenues = function() {
     $.ajax({
@@ -61,7 +78,7 @@ var MapViewModel = function() {
                     rating = "";
                   }
                   var markerpos = new google.maps.LatLng(this.location.lat, this.location.lng, false);
-                  console.log("creating marker at " + markerpos.toString());
+                  //console.log("creating marker at " + markerpos.toString());
                   var imageloc = this.location.address + ' ' + this.location.city + ', ' + this.location.state + ' ' + this.location.country;
                   var appendeddatahtml = '<div class="venue">' + 
                                         '<h2>' +
@@ -81,8 +98,8 @@ var MapViewModel = function() {
                     map: self.map
                   });
 
-                  console.log("Created marker:");
-                  console.log(marker);
+                  //console.log("Created marker:");
+                  //console.log(marker);
                   self.mapMarkers.push({marker: marker, content: appendeddatahtml});
 
                   google.maps.event.addListener(marker, 'click', (function(marker) {
@@ -117,13 +134,14 @@ var MapViewModel = function() {
 
     self.map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
 
-    //var textinput = (document.getElementById('textinput'));
-    //self.map.controls[google.maps.ControlPosition.TOP_LEFT].push(textinput);
+    self.textinput = document.getElementById('textinput');
+    self.selectbox = document.getElementById('selectbox');
+    self.selectbox.addEventListener('change', self.selectChange);
 
     var controlUI = (document.getElementById('controlUI'));
     self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);
 
-    var searchBox = new google.maps.places.SearchBox((textinput));
+    //var searchBox = new google.maps.places.SearchBox((textinput));
 
     google.maps.event.addListener(self.map, 'dblclick', function(event) {       
         console.log("Map double-clicked. Event follows:");
@@ -133,7 +151,14 @@ var MapViewModel = function() {
     self.infoWindow = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -25)});
 
     google.maps.event.addListener(self.infoWindow,'closeclick',function(){
-       self.unflagAllMarkers();
+      self.unflagAllMarkers();
+      if (selectbox.value) {
+        $.each(self.mapMarkers(), function() {
+          if (this.marker.title == selectbox.value) {
+            this.marker.setIcon(iconBase + 'blue_MarkerA.png');
+          }
+        });
+      }
     });
 
     self.markOwnLocation();
@@ -141,8 +166,9 @@ var MapViewModel = function() {
   };
 
   self.initialize();
-
 };
 
 var myMapViewModel = new MapViewModel();
+
 ko.applyBindings(myMapViewModel);
+myMapViewModel.searchQuery.subscribe(myMapViewModel.search);
