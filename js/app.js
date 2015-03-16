@@ -52,7 +52,7 @@ var MapViewModel = function() {
    @description The searchQuery is a Knockout observable that contains any texy the user types
    into the controlUI's search bar
    */
-  this.searchQuery = ko.observable();
+  self.searchQuery = ko.observable("");
 
   /**
    @var {[object]} foursquareVenues
@@ -60,19 +60,40 @@ var MapViewModel = function() {
    in the forms of an array of JSON objects. These are used to construct map markers, and provide
    HTML for the Google Maps InfoWindow associated with each map marker.
    */
-  this.foursquareVenues = ko.observableArray([]);
+  self.foursquareVenues = ko.observableArray([]);
 
   /**
-   @var {[object]} mapMarkers
+   @var {object[]} mapMarkers
    @description mapMarkers is a knockout observable array of objects which contain each map marker and it's respective InfoWindow text.
    */
-  this.mapMarkers = ko.observableArray([]);
+  self.mapMarkers = ko.observableArray([]);
 
   /**
    @var {object} myLocationMarker
    @description myLocationMarker is a knockout observable object containing a map marker for the user's location
    */
-  this.myLocationMarker = ko.observable();
+  self.myLocationMarker = ko.observable();
+
+  /**
+   @var string[] filteredList
+   @description A list of all the map market titles matching the current search criteria
+   */
+  self.filteredList = ko.observableArray([]);
+
+/**
+ @function filterList
+ @description Apply the current search bar contents to the list and set the observableArray equal to
+ all of the results.
+ */
+  self.filterList = function() {
+    var temp = [];
+    $.each(self.mapMarkers(), function() {
+      if (this.marker.map != null) {
+        temp.push(this.marker.title);
+      }
+    });
+    self.filteredList(temp);
+  };
 
   /**
    @function markOwnLocation
@@ -100,11 +121,27 @@ var MapViewModel = function() {
 
   /**
    @function search
-   @description The search function limits the Foursquare venues shown in the listview and also the markers
+   @description The search function limits the Foursquare venues shown in the listview and also removes
+   markers for venues that don't match from the visible map.
    shown in the map
    */
   self.search = function(value) {
+    var matchingVenueNames = [];
     console.log("Search function called");
+    $.each(self.mapMarkers(), function() {
+      if (this.marker.title.toLowerCase().indexOf(value.toLowerCase()) != -1) {
+        matchingVenueNames.push(this.marker.title);
+        this.marker.setMap(self.map);
+      } else {
+        this.marker.setMap(null);
+      }
+      console.log("this=");
+      console.log(this);
+    });
+
+    console.log("Matching venues:");
+    console.log(matchingVenueNames)
+    return matchingVenueNames;
   }
 
   /**
@@ -191,7 +228,10 @@ var MapViewModel = function() {
                     };
                   })(marker));
               });
-          };
+            $.each(self.mapMarkers(), function() {
+              self.filteredList.push(this.marker.title);
+            });
+          }
     });
   };
 
@@ -268,3 +308,5 @@ var myMapViewModel = new MapViewModel();
 ko.applyBindings(myMapViewModel);
 // Explicit knockout subscription to changes in searchQuery in order to re-call the search function each time
 myMapViewModel.searchQuery.subscribe(myMapViewModel.search);
+// Explicit knockout subscription to changes in searchQuery in order to re-filter the viewlist each time
+myMapViewModel.searchQuery.subscribe(myMapViewModel.filterList);
