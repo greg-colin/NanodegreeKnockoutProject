@@ -315,6 +315,7 @@ var MapViewModel = function() {
       console.log("button clicked");
       self.searchQuery("");
       document.getElementById("selectbox").selectedIndex = -1;
+      self.unflagAllMarkers();
     });
 
     self.markOwnLocation();
