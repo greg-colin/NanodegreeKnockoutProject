@@ -48,6 +48,12 @@ var MapViewModel = function() {
   var myLocation = new google.maps.LatLng(userLat(), userLong());
 
   /**
+   @var {string} userMessage
+   @description A message displayed at the bottom of the controls UI to indicate status
+   */
+  self.userMessage = ko.observable("Status:");
+
+  /**
    @var {string} searchQuery
    @description The searchQuery is a Knockout observable that contains any texy the user types
    into the controlUI's search bar
@@ -157,6 +163,10 @@ var MapViewModel = function() {
       console.log(this.marker);
       if (this.marker.title == event.srcElement.value) {
         this.marker.setIcon(iconBase + 'blue_MarkerA.png');
+        console.log("self.userMessage=");
+        console.log(self.userMessage);
+        self.userMessage("Status: Venue selected.");
+        self.searchQuery(this.marker.title);
       }
     });
   }
@@ -167,10 +177,12 @@ var MapViewModel = function() {
    is created along with HTML to populate an associated InfoWindow
    */
   self.getVenues = function() {
+    self.userMessage("Status: Retriving Foursquare venues...");
     $.ajax({
         type: "GET",
         url: "https://api.foursquare.com/v2/venues/search?ll="+userLat()+","+userLong()+"&client_id=OLYPOBMQ003QZVMZGDFOEGEZOGZQPNX1X404PVV1FLPVGFMU&client_secret=3MVWXXYQ5ENWZ4MKW4Q1NDMW2P20UFO243POFRBDZUHALQ4U&v=20150228",
           success: function(data) {
+            self.userMessage("Status: Processing Foursquare venues.");
             var phone, category, address, rating;
             self.foursquareVenues(data.response.venues);
               $.each(self.foursquareVenues(), function() {
@@ -219,18 +231,20 @@ var MapViewModel = function() {
 
                   self.mapMarkers.push({marker: marker, content: appendeddatahtml});
 
-                  google.maps.event.addListener(marker, 'click', (function(marker) {
+                  google.maps.event.addListener(marker, 'click', (function(marker, htmlcontent) {
                     return function() {
                       console.log("Marker clicked:");
                       console.log(marker);
+                      console.log("content="+htmlcontent);
                       marker.setIcon(iconBase + 'red_MarkerA.png');
-                      self.handleInfoWindow(marker.position, appendeddatahtml);
+                      self.handleInfoWindow(marker.position, htmlcontent);
                     };
-                  })(marker));
+                  })(marker, appendeddatahtml));
               });
             $.each(self.mapMarkers(), function() {
               self.filteredList.push(this.marker.title);
             });
+            self.userMessage("Status: Waiting for user activity.");
           }
     });
   };
@@ -241,6 +255,7 @@ var MapViewModel = function() {
    @param {string} content HTML describing the location.
    */
   self.handleInfoWindow = function(latlng, content) {
+    console.log("receiving content="+content);
     self.infoWindow.setContent(content);
     self.infoWindow.setPosition(latlng);
     self.infoWindow.open(self.map);
@@ -253,6 +268,7 @@ var MapViewModel = function() {
    */
   self.initialize = function() {
     console.log("in self.initialize");
+    self.userMessage("Status: Initializing...");
 
     var mapOptions = {
       disableDefaultUI: true,
@@ -267,7 +283,7 @@ var MapViewModel = function() {
     self.selectbox = document.getElementById('selectbox');
     self.selectbox.addEventListener('change', self.selectChange);
 
-    var controlUI = (document.getElementById('controlUI'));
+    var controlUI = document.getElementById('controlUI');
     self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);
 
     //var searchBox = new google.maps.places.SearchBox((textinput));
@@ -293,6 +309,12 @@ var MapViewModel = function() {
           }
         });
       }
+    });
+
+    document.getElementById('clearbutton').addEventListener("click", function() {
+      console.log("button clicked");
+      self.searchQuery("");
+      document.getElementById("selectbox").selectedIndex = -1;
     });
 
     self.markOwnLocation();

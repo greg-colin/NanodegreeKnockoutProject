@@ -21,6 +21,18 @@ body {
 	margin-left: 0px !important ;
 }
 
+.message-good {
+	color: #008000;
+}
+
+.venue {
+
+}
+
+.venue h2 {
+	font-size: 16px;
+}
+
 #controlUI {
 	left: 16px !important;
     padding-left: 0px;

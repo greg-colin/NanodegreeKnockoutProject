@@ -11,7 +11,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 11069,
+				"buffer_size": 12026,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 873,
+				"buffer_size": 1055,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +27,7 @@
 			"file": "css/mapapp.css",
 			"settings":
 			{
-				"buffer_size": 514,
+				"buffer_size": 596,
 				"line_ending": "Windows"
 			}
 		}
@@ -201,6 +201,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"userMessage",
+			"blue",
 			"self",
 			"currentMarker",
 			"position",
@@ -369,15 +371,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 11069,
+						"buffer_size": 12026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11003,
-								11003
+								11478,
+								11478
 							]
 						],
 						"settings":
@@ -387,7 +389,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3841.0,
+						"translation.y": 3961.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -397,15 +399,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 873,
+						"buffer_size": 1055,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								506,
-								506
+								623,
+								623
 							]
 						],
 						"settings":
@@ -424,15 +426,15 @@
 					"file": "css/mapapp.css",
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								512,
-								512
+								370,
+								370
 							]
 						],
 						"settings":
