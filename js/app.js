@@ -1,6 +1,6 @@
 /**
  @file app.js
- @author Gregory Colin
+ @author Gregory Coline
  @version 1.0
  */
 
@@ -236,6 +236,7 @@ var MapViewModel = function() {
                       console.log("Marker clicked:");
                       console.log(marker);
                       console.log("content="+htmlcontent);
+                      self.unflagAllMarkers();
                       marker.setIcon(iconBase + 'red_MarkerA.png');
                       self.handleInfoWindow(marker.position, htmlcontent);
                     };
@@ -255,7 +256,6 @@ var MapViewModel = function() {
    @param {string} content HTML describing the location.
    */
   self.handleInfoWindow = function(latlng, content) {
-    self.unflagAllMarkers();
     self.infoWindow.setContent(content);
     self.infoWindow.setPosition(latlng);
     self.infoWindow.open(self.map);
