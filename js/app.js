@@ -246,6 +246,10 @@ var MapViewModel = function() {
               self.filteredList.push(this.marker.title);
             });
             self.userMessage("Status: Waiting for user activity.");
+          },
+          error: function() {
+            document.getElementById('message-div').className = "message-bad";
+            self.userMessage = "Status: Failed to retireve Foursquare venues."
           }
     });
   };
@@ -268,6 +272,7 @@ var MapViewModel = function() {
    */
   self.initialize = function() {
     console.log("in self.initialize");
+    document.getElementById('message-div').className = "message-good";
     self.userMessage("Status: Initializing...");
 
     var mapOptions = {
@@ -279,57 +284,72 @@ var MapViewModel = function() {
 
     self.map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
 
-    self.textinput = document.getElementById('textinput');
-    self.selectbox = document.getElementById('selectbox');
-    self.selectbox.addEventListener('change', self.selectChange);
+    if (self.map != null) {
 
-    var controlUI = document.getElementById('controlUI');
-    self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);
+      self.textinput = document.getElementById('textinput');
+      self.selectbox = document.getElementById('selectbox');
+      self.selectbox.addEventListener('change', self.selectChange);
 
-    //var searchBox = new google.maps.places.SearchBox((textinput));
+      var controlUI = document.getElementById('controlUI');
+      self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);
 
-    google.maps.event.addListener(self.map, 'dblclick', function(event) {       
-        console.log("Map double-clicked. Event follows:");
-        console.log(event);
-    });
+      //var searchBox = new google.maps.places.SearchBox((textinput));
 
-    self.infoWindow = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -25)});
+      google.maps.event.addListener(self.map, 'dblclick', function(event) {       
+          console.log("Map double-clicked. Event follows:");
+          console.log(event);
+      });
 
-    /**
-     @function anonymous callback function
-     @description Processes the closing click for the info window. Sets all markers to default
-     color, and if an item is selected in the listview, turns it back to blue.
-     */
-    google.maps.event.addListener(self.infoWindow,'closeclick',function(){
-      self.unflagAllMarkers();
-      if (selectbox.value) {
-        $.each(self.mapMarkers(), function() {
-          if (this.marker.title == selectbox.value) {
-            this.marker.setIcon(iconBase + 'blue_MarkerA.png');
-          }
-        });
-      }
-    });
+      self.infoWindow = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -25)});
 
-    document.getElementById('clearbutton').addEventListener("click", function() {
-      console.log("button clicked");
-      self.searchQuery("");
-      document.getElementById("selectbox").selectedIndex = -1;
-      self.unflagAllMarkers();
-    });
+      /**
+       @function anonymous callback function
+       @description Processes the closing click for the info window. Sets all markers to default
+       color, and if an item is selected in the listview, turns it back to blue.
+       */
+      google.maps.event.addListener(self.infoWindow,'closeclick',function(){
+        self.unflagAllMarkers();
+        if (selectbox.value) {
+          $.each(self.mapMarkers(), function() {
+            if (this.marker.title == selectbox.value) {
+              this.marker.setIcon(iconBase + 'blue_MarkerA.png');
+            }
+          });
+        }
+      });
 
-    self.markOwnLocation();
-    self.getVenues();
-  };
+      document.getElementById('clearbutton').addEventListener("click", function() {
+        console.log("button clicked");
+        self.searchQuery("");
+        document.getElementById("selectbox").selectedIndex = -1;
+        self.unflagAllMarkers();
+      });
+
+      self.markOwnLocation();
+      self.getVenues();
+    } else {
+      console.log("Uh-oh!!! No Google map!!!!!");
+    }
+  }
 
   self.initialize();
 };
 
-var myMapViewModel = new MapViewModel();
+// Don't even try to start if 'google' is undefined.
+if (typeof google !== 'undefined') {
+  var myMapViewModel = new MapViewModel();
 
-// Apply the general knockout bindings,
-ko.applyBindings(myMapViewModel);
-// Explicit knockout subscription to changes in searchQuery in order to re-call the search function each time
-myMapViewModel.searchQuery.subscribe(myMapViewModel.search);
-// Explicit knockout subscription to changes in searchQuery in order to re-filter the viewlist each time
-myMapViewModel.searchQuery.subscribe(myMapViewModel.filterList);
+  // Apply the general knockout bindings,
+  ko.applyBindings(myMapViewModel);
+  // Explicit knockout subscription to changes in searchQuery in order to re-call the search function each time
+  myMapViewModel.searchQuery.subscribe(myMapViewModel.search);
+  // Explicit knockout subscription to changes in searchQuery in order to re-filter the viewlist each time
+  myMapViewModel.searchQuery.subscribe(myMapViewModel.filterList);
+} else {
+  console.log("Uh-oh!! google is undefined!!!!!");
+  document.getElementById('textinput').style.display = "none";
+  document.getElementById('selectbox').style.display = "none";
+  document.getElementById('clearbutton').style.display = "none";
+  document.getElementById('message-div').className = "message-bad";
+  document.getElementById('message-div').innerText = "Status: Google Maps API did not load.";
+}

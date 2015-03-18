@@ -11,7 +11,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 12026,
+				"buffer_size": 12116,
 				"line_ending": "Windows"
 			}
 		},
@@ -201,6 +201,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blue",
 			"userMessage",
 			"blue",
 			"self",
@@ -371,15 +372,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 12026,
+						"buffer_size": 12116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11478,
-								11478
+								9105,
+								9105
 							]
 						],
 						"settings":
@@ -389,7 +390,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3961.0,
+						"translation.y": 2876.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -439,7 +440,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
