@@ -43,7 +43,7 @@ body {
     margin-left: 0px;
     margin-bottom: 16px;
     background-color: #f7f7f7;
-    height: 50%;
+    height: 33%;
     min-height: 270px;
     width: 15%;
     min-width: 250px;
@@ -55,10 +55,19 @@ body {
 }
 
 #selectbox {
+	position: absolute;
+	bottom: 40px;
 	width: 100%;
 }
 
 #message-div {
 	position: absolute;
+	min-height: 15px;
 	bottom: 2px;
+}
+
+#buttons-div {
+	position: absolute;
+	min-height: 20px;
+	bottom: 20px;
 }

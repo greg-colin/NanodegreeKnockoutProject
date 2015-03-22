@@ -7,6 +7,7 @@
 /**
  @function MapViewModel
  @description This function contains the Knockout viewmodel
+ @requires google.maps
  */
 var MapViewModel = function() {
   /**
@@ -172,12 +173,36 @@ var MapViewModel = function() {
   }
 
   /**
+   @function ossetCenter
+   @param {google.maps.LatLng} latlng
+   @param {int} offsetx
+   @param {int} offsety
+   @description Offset the map by offsetx and offsety pixels from center.<br>
+   NOTE: From example on stackoverflow.com
+   */
+  self.offsetCenter = function(latlng,offsetx,offsety) {
+    var scale = Math.pow(2, self.map.getZoom());
+    var nw = new google.maps.LatLng(
+        self.map.getBounds().getNorthEast().lat(),
+        self.map.getBounds().getSouthWest().lng()
+    );
+    var worldCoordinateCenter = self.map.getProjection().fromLatLngToPoint(latlng);
+    var pixelOffset = new google.maps.Point((offsetx/scale) || 0,(offsety/scale) ||0)
+    var worldCoordinateNewCenter = new google.maps.Point(
+        worldCoordinateCenter.x - pixelOffset.x,
+        worldCoordinateCenter.y + pixelOffset.y
+    );
+    var newCenter = self.map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+    self.map.setCenter(newCenter);
+  }
+
+  /**
    @function getVenues
    @description Make an AJAX request for Foursquare for checkin venues located near the user. If successful, a marker for each location
    is created along with HTML to populate an associated InfoWindow
    */
   self.getVenues = function() {
-    self.userMessage("Status: Retriving Foursquare venues...");
+    self.userMessage("Status: Retrieving Foursquare venues...");
     $.ajax({
         type: "GET",
         url: "https://api.foursquare.com/v2/venues/search?ll="+userLat()+","+userLong()+"&client_id=OLYPOBMQ003QZVMZGDFOEGEZOGZQPNX1X404PVV1FLPVGFMU&client_secret=3MVWXXYQ5ENWZ4MKW4Q1NDMW2P20UFO243POFRBDZUHALQ4U&v=20150228",
@@ -248,8 +273,9 @@ var MapViewModel = function() {
             self.userMessage("Status: Waiting for user activity.");
           },
           error: function() {
+            console.log("In foursquare error");
             document.getElementById('message-div').className = "message-bad";
-            self.userMessage = "Status: Failed to retireve Foursquare venues."
+            self.userMessage("Status: Failed to retireve Foursquare venues.");
           }
     });
   };
@@ -318,6 +344,27 @@ var MapViewModel = function() {
         }
       });
 
+      /**
+       @function anonymous callback function
+       @description When a resize event occurs, perform the offset again to keep the home location in view.
+       */
+      google.maps.event.addDomListener(window, 'resize', function() {
+        console.log("I see resize event");
+        self.offsetCenter(myLocation, 50, 50);
+      });
+
+      /**
+       @function anonymous callback function
+       @description Once the map is ready, offset the center by a few pixels to allow for the control UI.
+       */
+      google.maps.event.addListenerOnce(self.map, 'idle', function(){
+          self.offsetCenter(myLocation, 50, 50);
+      });
+
+      /**
+       @function anonymous callback function
+       @description Reset the searchQuery, deselect anything selected in the list, and unflag all markers when the "Reset selection" button is clicked.
+       */
       document.getElementById('clearbutton').addEventListener("click", function() {
         console.log("button clicked");
         self.searchQuery("");
