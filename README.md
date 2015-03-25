@@ -30,3 +30,9 @@ Status progress is shown with a string at the bottom of the controls UI. In the 
 does not load, an error message is displayed in red. In the event that the Google Maps API doesn't load, the
 map and it's control UI will not be visible, so all of the controls are hidden *except* the error string,
 which will inform that the Google API is unavailble.
+
+## References
+- The fine AJAX course at Udacity.com!
+- w3schools.com
+- stackoverflow.com
+- Other user submissions in the Udacity forums
