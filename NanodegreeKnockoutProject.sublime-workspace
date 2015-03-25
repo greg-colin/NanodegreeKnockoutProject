@@ -7,30 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 14904,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1047,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/mapapp.css",
-			"settings":
-			{
-				"buffer_size": 919,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,14 +32,15 @@
 	},
 	"file_history":
 	[
+		"/H/Github/udacity/NanodegreeKnockoutProject/js/app.js",
+		"/H/Github/udacity/NanodegreeKnockoutProject/index.html",
+		"/H/Github/udacity/NanodegreeKnockoutProject/css/mapapp.css",
+		"/J/publish/Resume/index.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/sample-json.txt",
 		"/J/publish/Portfolio/index.html",
 		"/J/publish/Gregs-Portal/index.html",
-		"/H/Github/udacity/NanodegreeKnockoutProject/css/mapapp.css",
 		"/J/publish/appt.html",
-		"/H/Github/udacity/NanodegreeKnockoutProject/js/app.js",
 		"/J/publish/Resume/js/helper.js",
-		"/H/Github/udacity/NanodegreeKnockoutProject/index.html",
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/ajax-example.js",
 		"/J/publish/Resume/js/resumeBuilder.js",
 		"/H/Github/udacity/NanodegreeKnockoutProject/js/models/mapdatamodel.js",
@@ -86,7 +63,6 @@
 		"/H/Github/udacity/ud989-cat-clicker-ko-starter/js/app.js",
 		"/H/Github/udacity/ud989-todo-app/js/app.js",
 		"/H/Github/udacity/catclickerKO/js/app.js",
-		"/J/publish/Resume/index.html",
 		"/H/Github/udacity/ud989-todo-app/js/models/todo.js",
 		"/H/Github/udacity/catclickerKO/index.html",
 		"/H/Github/udacity/ud989-school-attendance/js/app.js",
@@ -365,91 +341,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/app.js",
-					"settings":
-					{
-						"buffer_size": 14904,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5627,
-								5627
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2295.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 1047,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								427,
-								427
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/mapapp.css",
-					"settings":
-					{
-						"buffer_size": 919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

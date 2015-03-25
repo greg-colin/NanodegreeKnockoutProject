@@ -95,7 +95,7 @@ var MapViewModel = function() {
   self.filterList = function() {
     var temp = [];
     $.each(self.mapMarkers(), function() {
-      if (this.marker.map != null) {
+      if (this.marker.map !== null) {
         temp.push(this.marker.title);
       }
     });
@@ -147,9 +147,9 @@ var MapViewModel = function() {
     });
 
     console.log("Matching venues:");
-    console.log(matchingVenueNames)
+    console.log(matchingVenueNames);
     return matchingVenueNames;
-  }
+  };
 
   /**
    @function selectChange
@@ -170,7 +170,7 @@ var MapViewModel = function() {
         self.searchQuery(this.marker.title);
       }
     });
-  }
+  };
 
   /**
    @function ossetCenter
@@ -187,14 +187,14 @@ var MapViewModel = function() {
         self.map.getBounds().getSouthWest().lng()
     );
     var worldCoordinateCenter = self.map.getProjection().fromLatLngToPoint(latlng);
-    var pixelOffset = new google.maps.Point((offsetx/scale) || 0,(offsety/scale) ||0)
+    var pixelOffset = new google.maps.Point((offsetx / scale) || 0, (offsety / scale) || 0);
     var worldCoordinateNewCenter = new google.maps.Point(
         worldCoordinateCenter.x - pixelOffset.x,
         worldCoordinateCenter.y + pixelOffset.y
     );
     var newCenter = self.map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
     self.map.setCenter(newCenter);
-  }
+  };
 
   /**
    @function getVenues
@@ -310,7 +310,7 @@ var MapViewModel = function() {
 
     self.map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
 
-    if (self.map != null) {
+    if (self.map !== null) {
 
       self.textinput = document.getElementById('textinput');
       self.selectbox = document.getElementById('selectbox');
@@ -377,7 +377,7 @@ var MapViewModel = function() {
     } else {
       console.log("Uh-oh!!! No Google map!!!!!");
     }
-  }
+  };
 
   self.initialize();
 };
