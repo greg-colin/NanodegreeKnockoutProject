@@ -48,6 +48,8 @@ var MapViewModel = function() {
    */
   var myLocation = new google.maps.LatLng(userLat(), userLong());
 
+  var myBounds = new google.maps.LatLngBounds();
+
   /**
    @var {string} userMessage
    @description A message displayed at the bottom of the controls UI to indicate status
@@ -86,6 +88,23 @@ var MapViewModel = function() {
    @description A list of all the map market titles matching the current search criteria
    */
   self.filteredList = ko.observableArray([]);
+
+  self.mql = window.matchMedia("(min-width: 480px)");
+
+  self.handleMediaChange = function(mql) {
+    if (mql.matches) {
+      console.log("media query matches");
+      document.getElementById('controlUI-min').style.display = "none";
+      document.getElementById('controlUI').style.display = "block";
+    } else {
+      console.log("media query DOES NOT match");
+      document.getElementById('controlUI-min').style.display = "block";
+      document.getElementById('controlUI').style.display = "none";
+    }
+  }
+
+  self.mql.addListener(self.handleMediaChange);
+  self.handleMediaChange(self.mql);
 
 /**
  @function filterList
@@ -181,6 +200,7 @@ var MapViewModel = function() {
    NOTE: From example on stackoverflow.com
    */
   self.offsetCenter = function(latlng,offsetx,offsety) {
+    console.log("in offsetCenter");
     var scale = Math.pow(2, self.map.getZoom());
     var nw = new google.maps.LatLng(
         self.map.getBounds().getNorthEast().lat(),
@@ -194,6 +214,8 @@ var MapViewModel = function() {
     );
     var newCenter = self.map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
     self.map.setCenter(newCenter);
+    self.map.fitBounds(myBounds);
+    console.log("offsetCenter complete");
   };
 
   /**
@@ -256,6 +278,10 @@ var MapViewModel = function() {
 
                   self.mapMarkers.push({marker: marker, content: appendeddatahtml});
 
+                  // Fit the map to marker boundaries
+                  myBounds.extend(markerpos);
+                  self.map.fitBounds(myBounds);
+
                   google.maps.event.addListener(marker, 'click', (function(marker, htmlcontent) {
                     return function() {
                       console.log("Marker clicked:");
@@ -297,7 +323,6 @@ var MapViewModel = function() {
    Creates (but not displays) the info window. Adds UI controls created in the DOM to the map
    */
   self.initialize = function() {
-    console.log("in self.initialize");
     document.getElementById('message-div').className = "message-good";
     self.userMessage("Status: Initializing...");
 
@@ -318,6 +343,9 @@ var MapViewModel = function() {
 
       var controlUI = document.getElementById('controlUI');
       self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUI);
+
+      var controlUImin = document.getElementById('controlUI-min');
+      self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUImin);
 
       //var searchBox = new google.maps.places.SearchBox((textinput));
 
@@ -370,6 +398,11 @@ var MapViewModel = function() {
         self.searchQuery("");
         document.getElementById("selectbox").selectedIndex = -1;
         self.unflagAllMarkers();
+      });
+
+      document.getElementById('showbutton').addEventListener("click", function() {
+        console.log("mobile show full ui button clicked");
+        // Now, hide the menu button and show the regular UI
       });
 
       self.markOwnLocation();

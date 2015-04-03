@@ -5,9 +5,9 @@
 	<link rel="stylesheet"  type="text/css" href="css/mapapp.css"></link>
 </head>
 <body>
-	
-	<div id="controlUI">
-		<input id="textinput" class="map-search" type="search" data-bind="value: searchQuery, valueUpdate: 'keyup'"placeholder="Search...">
+
+	<div id="controlUI" style="display: none;">
+		<input id="textinput" class="map-search" type="search" data-bind="value: searchQuery, valueUpdate: 'keyup'" placeholder="Search...">
 		<p>
 		<select id="selectbox" class="no-side-margins" size="10" data-bind="foreach: filteredList">
 			<option data-bind="text: $data"></option>
@@ -15,6 +15,12 @@
 		<p>
 		<div id="buttons-div"><button id="clearbutton" type="button">Reset Selection</button></div>
 		<div id="message-div" class="message-good" data-bind="text: userMessage"></div>
+	</div>
+
+	<div id="controlUI-min" style="display: none;">
+		<button id="showbutton" type="button">
+			<img src="images/mobile_menu_icon_sm.png"></img>
+		</button>
 	</div>
 
 	<div id="map-div">

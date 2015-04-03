@@ -49,6 +49,18 @@ body {
     min-width: 250px;
 }
 
+#controlUI-min {
+	left: 16px !important;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 16px;
+    background-color: #f7f7f7;
+    height: 75px;
+    min-height: 75px;
+    width: 75px;
+    min-width: 75px;
+}
+
 #textinput {
 	margin-left: 0px;
 	width: 100%;
@@ -70,4 +82,20 @@ body {
 	position: absolute;
 	min-height: 20px;
 	bottom: 20px;
+}
+
+#showbutton {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#showimage {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
 }
