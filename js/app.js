@@ -192,7 +192,7 @@ var MapViewModel = function() {
   };
 
   /**
-   @function ossetCenter
+   @function offsetCenter
    @param {google.maps.LatLng} latlng
    @param {int} offsetx
    @param {int} offsety
@@ -217,6 +217,23 @@ var MapViewModel = function() {
     self.map.fitBounds(myBounds);
     console.log("offsetCenter complete");
   };
+  
+  // this came out of some research i was doing about centering maps on stackoverflow
+  // so i pasted it here for another day.
+  self.map_recenter = function(latlng,offsetx,offsety) {
+    var point1 = self.map.getProjection().fromLatLngToPoint(
+        (latlng instanceof google.maps.LatLng) ? latlng : self.map.getCenter()
+    );
+    var point2 = new google.maps.Point(
+        ( (typeof(offsetx) == 'number' ? offsetx : 0) / Math.pow(2, self.map.getZoom()) ) || 0,
+        ( (typeof(offsety) == 'number' ? offsety : 0) / Math.pow(2, self.map.getZoom()) ) || 0
+    );  
+    self.map.setCenter(self.map.getProjection().fromPointToLatLng(new google.maps.Point(
+        point1.x - point2.x,
+        point1.y + point2.y
+    )));
+	self.map.fitBounds(myBounds);
+  }
 
   /**
    @function getVenues
@@ -227,7 +244,7 @@ var MapViewModel = function() {
     self.userMessage("Status: Retrieving Foursquare venues...");
     $.ajax({
         type: "GET",
-        url: "https://api.foursquare.com/v2/venues/search?ll="+userLat()+","+userLong()+"&client_id=OLYPOBMQ003QZVMZGDFOEGEZOGZQPNX1X404PVV1FLPVGFMU&client_secret=3MVWXXYQ5ENWZ4MKW4Q1NDMW2P20UFO243POFRBDZUHALQ4U&v=20150228",
+        url: "https://api.foursquare.com/v2/venues/search?intent=browse&radius=300&ll="+userLat()+","+userLong()+"&client_id=OLYPOBMQ003QZVMZGDFOEGEZOGZQPNX1X404PVV1FLPVGFMU&client_secret=3MVWXXYQ5ENWZ4MKW4Q1NDMW2P20UFO243POFRBDZUHALQ4U&v=20150401",
           success: function(data) {
             self.userMessage("Status: Processing Foursquare venues.");
             var phone, category, address, rating;
@@ -312,6 +329,9 @@ var MapViewModel = function() {
    @param {string} content HTML describing the location.
    */
   self.handleInfoWindow = function(latlng, content) {
+	  // TODO: for some reason I can't use self.offsetCenter to do this. It might be broken.
+	  // Try self.map_recenter
+	self.map.setCenter(latlng);
     self.infoWindow.setContent(content);
     self.infoWindow.setPosition(latlng);
     self.infoWindow.open(self.map);
@@ -370,6 +390,7 @@ var MapViewModel = function() {
             }
           });
         }
+		self.map_recenter(myLocation, 50, 50);
       });
 
       /**
@@ -378,7 +399,7 @@ var MapViewModel = function() {
        */
       google.maps.event.addDomListener(window, 'resize', function() {
         console.log("I see resize event");
-        self.offsetCenter(myLocation, 50, 50);
+		self.map_recenter(myLocation, 50, 50);
       });
 
       /**
@@ -386,7 +407,7 @@ var MapViewModel = function() {
        @description Once the map is ready, offset the center by a few pixels to allow for the control UI.
        */
       google.maps.event.addListenerOnce(self.map, 'idle', function(){
-          self.offsetCenter(myLocation, 50, 50);
+          self.map_recenter(myLocation, 50, 50);
       });
 
       /**
@@ -394,7 +415,7 @@ var MapViewModel = function() {
        @description Reset the searchQuery, deselect anything selected in the list, and unflag all markers when the "Reset selection" button is clicked.
        */
       document.getElementById('clearbutton').addEventListener("click", function() {
-        console.log("button clicked");
+        console.log("clear button clicked");
         self.searchQuery("");
         document.getElementById("selectbox").selectedIndex = -1;
         self.unflagAllMarkers();
@@ -402,7 +423,17 @@ var MapViewModel = function() {
 
       document.getElementById('showbutton').addEventListener("click", function() {
         console.log("mobile show full ui button clicked");
-        // Now, hide the menu button and show the regular UI
+		document.getElementById('controlUI-min').style.display = "none";
+		document.getElementById("textinput").className = "map-search-min";
+		document.getElementById("hidebutton").className = "map-search-dismiss";
+		document.getElementById("hidebutton").style.display = "inline";
+		document.getElementById('controlUI').style.display = "block";
+      });
+	  
+      document.getElementById('hidebutton').addEventListener("click", function() {
+        console.log("mobile hide full ui button clicked");
+		document.getElementById('controlUI').style.display = "none";
+		document.getElementById('controlUI-min').style.display = "block";
       });
 
       self.markOwnLocation();

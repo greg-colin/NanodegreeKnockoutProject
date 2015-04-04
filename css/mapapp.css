@@ -11,7 +11,21 @@ body {
 .map-search {
 	margin-left: 16px;
 	margin-top: 16px;
-	width: 15%;
+	width: 100%;
+}
+
+.map-search-min {
+	margin-left: 16px;
+	margin-top: 16px;
+	width: 65%;
+}
+
+.map-search-dismiss {
+	width: 30%;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important ;
 }
 
 .no-side-margins {
@@ -63,7 +77,7 @@ body {
 
 #textinput {
 	margin-left: 0px;
-	width: 100%;
+	/* width: 100%; */
 }
 
 #selectbox {
