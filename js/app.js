@@ -89,8 +89,17 @@ var MapViewModel = function() {
    */
   self.filteredList = ko.observableArray([]);
 
+  /**
+   @var {object} mql
+   @description A match query object corresponding to the passed string. This is used as a parameter to
+   an event handler function which handles events generated when a media query match occurs.
+   */
   self.mql = window.matchMedia("(min-width: 480px)");
 
+  /**
+   @function handleMediaChange
+   @param {object} mql A media query match object describing the change criteria
+   */
   self.handleMediaChange = function(mql) {
     if (mql.matches) {
       console.log("media query matches");
@@ -103,7 +112,9 @@ var MapViewModel = function() {
     }
   }
 
+  // Add an event listener for media query state changes
   self.mql.addListener(self.handleMediaChange);
+  // ...and call it "by hand" for the initial display
   self.handleMediaChange(self.mql);
 
 /**
@@ -187,6 +198,8 @@ var MapViewModel = function() {
         console.log(self.userMessage);
         self.userMessage("Status: Venue selected.");
         self.searchQuery(this.marker.title);
+        // TODO: Recenter on this pin here
+        // TODO: handle info window here
       }
     });
   };
@@ -398,7 +411,7 @@ var MapViewModel = function() {
        */
       google.maps.event.addDomListener(window, 'resize', function() {
         console.log("I see resize event");
-		self.map_recenter(myLocation, 50, 50);
+        self.map_recenter(myLocation, 50, 50);
       });
 
       /**
@@ -431,13 +444,18 @@ var MapViewModel = function() {
 	  
       document.getElementById('hidebutton').addEventListener("click", function() {
         console.log("mobile hide full ui button clicked");
-		document.getElementById('controlUI').style.display = "none";
-		document.getElementById('controlUI-min').style.display = "block";
+        document.getElementById('controlUI').style.display = "none";
+        document.getElementById('controlUI-min').style.display = "block";
+        // TODO: Reset selection when this happens??
+        //self.searchQuery("");
+        //document.getElementById("selectbox").selectedIndex = -1;
+        //self.unflagAllMarkers();
       });
 
       self.markOwnLocation();
       self.getVenues();
     } else {
+      // We can't actually get here because a different failure will have already occurred, but just in case...
       console.log("Uh-oh!!! No Google map!!!!!");
     }
   };
