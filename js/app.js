@@ -1,7 +1,9 @@
 /**
  @file app.js
  @author Gregory Coline
- @version 1.0
+ @version 1.0.1
+ @description Version 1.0.0 Initial release<br>
+ Version 1.0.1 address grading comments from first turn-in.
  */
 
 /**
@@ -48,6 +50,10 @@ var MapViewModel = function() {
    */
   var myLocation = new google.maps.LatLng(userLat(), userLong());
 
+  /**
+   @var {object} myBounds
+   @description A bounds object in the google maps API, used for keeping the map appropriately-sized.
+   */
   var myBounds = new google.maps.LatLngBounds();
 
   /**
@@ -105,6 +111,9 @@ var MapViewModel = function() {
       console.log("media query matches");
       document.getElementById('controlUI-min').style.display = "none";
       document.getElementById('controlUI').style.display = "block";
+      document.getElementById("hidebutton").style.display = "none;";
+      document.getElementById("textinput").className = "map-search";
+
     } else {
       console.log("media query DOES NOT match");
       document.getElementById('controlUI-min').style.display = "block";
@@ -199,40 +208,21 @@ var MapViewModel = function() {
         self.userMessage("Status: Venue selected.");
         self.searchQuery(this.marker.title);
         // TODO: Recenter on this pin here
+        self.map.setCenter(this.marker.position);
         // TODO: handle info window here
+       self.handleInfoWindow(this.marker.position, this.content);
       }
     });
   };
 
   /**
-   @function offsetCenter
+   @function map_recenter
    @param {google.maps.LatLng} latlng
    @param {int} offsetx
    @param {int} offsety
    @description Offset the map by offsetx and offsety pixels from center.<br>
    NOTE: From example on stackoverflow.com
    */
-  self.offsetCenter = function(latlng,offsetx,offsety) {
-    console.log("in offsetCenter");
-    var scale = Math.pow(2, self.map.getZoom());
-    var nw = new google.maps.LatLng(
-        self.map.getBounds().getNorthEast().lat(),
-        self.map.getBounds().getSouthWest().lng()
-    );
-    var worldCoordinateCenter = self.map.getProjection().fromLatLngToPoint(latlng);
-    var pixelOffset = new google.maps.Point((offsetx / scale) || 0, (offsety / scale) || 0);
-    var worldCoordinateNewCenter = new google.maps.Point(
-        worldCoordinateCenter.x - pixelOffset.x,
-        worldCoordinateCenter.y + pixelOffset.y
-    );
-    var newCenter = self.map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
-    self.map.setCenter(newCenter);
-    self.map.fitBounds(myBounds);
-    console.log("offsetCenter complete");
-  };
-  
-  // this came out of some research i was doing about centering maps on stackoverflow
-  // so i pasted it here for another day.
   self.map_recenter = function(latlng,offsetx,offsety) {
     var point1 = self.map.getProjection().fromLatLngToPoint(
         (latlng instanceof google.maps.LatLng) ? latlng : self.map.getCenter()
@@ -379,8 +369,6 @@ var MapViewModel = function() {
       var controlUImin = document.getElementById('controlUI-min');
       self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUImin);
 
-      //var searchBox = new google.maps.places.SearchBox((textinput));
-
       google.maps.event.addListener(self.map, 'dblclick', function(event) {       
           console.log("Map double-clicked. Event follows:");
           console.log(event);
@@ -402,7 +390,7 @@ var MapViewModel = function() {
             }
           });
         }
-		self.map_recenter(myLocation, 50, 50);
+        self.map_recenter(myLocation, 50, 50);
       });
 
       /**
@@ -431,6 +419,8 @@ var MapViewModel = function() {
         self.searchQuery("");
         document.getElementById("selectbox").selectedIndex = -1;
         self.unflagAllMarkers();
+        self.infoWindow.close();
+        self.map_recenter(myLocation, 50, 50);
       });
 
       document.getElementById('showbutton').addEventListener("click", function() {
@@ -446,10 +436,6 @@ var MapViewModel = function() {
         console.log("mobile hide full ui button clicked");
         document.getElementById('controlUI').style.display = "none";
         document.getElementById('controlUI-min').style.display = "block";
-        // TODO: Reset selection when this happens??
-        //self.searchQuery("");
-        //document.getElementById("selectbox").selectedIndex = -1;
-        //self.unflagAllMarkers();
       });
 
       self.markOwnLocation();
@@ -457,6 +443,8 @@ var MapViewModel = function() {
     } else {
       // We can't actually get here because a different failure will have already occurred, but just in case...
       console.log("Uh-oh!!! No Google map!!!!!");
+      document.getElementById('message-div').className = "message-bad";
+      document.getElementById('message-div').innerText = "Status: Google Maps API did not load.";
     }
   };
 
