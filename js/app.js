@@ -330,8 +330,7 @@ var MapViewModel = function() {
    */
   self.handleInfoWindow = function(latlng, content) {
 	  // TODO: for some reason I can't use self.offsetCenter to do this. It might be broken.
-	  // Try self.map_recenter
-	self.map.setCenter(latlng);
+    self.map.setCenter(latlng);
     self.infoWindow.setContent(content);
     self.infoWindow.setPosition(latlng);
     self.infoWindow.open(self.map);
@@ -423,11 +422,11 @@ var MapViewModel = function() {
 
       document.getElementById('showbutton').addEventListener("click", function() {
         console.log("mobile show full ui button clicked");
-		document.getElementById('controlUI-min').style.display = "none";
-		document.getElementById("textinput").className = "map-search-min";
-		document.getElementById("hidebutton").className = "map-search-dismiss";
-		document.getElementById("hidebutton").style.display = "inline";
-		document.getElementById('controlUI').style.display = "block";
+        document.getElementById('controlUI-min').style.display = "none";
+        document.getElementById("textinput").className = "map-search-min";
+        document.getElementById("hidebutton").className = "map-search-dismiss";
+        document.getElementById("hidebutton").style.display = "inline";
+        document.getElementById('controlUI').style.display = "block";
       });
 	  
       document.getElementById('hidebutton').addEventListener("click", function() {
