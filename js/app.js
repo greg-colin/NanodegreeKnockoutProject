@@ -117,14 +117,12 @@ var MapViewModel = function() {
    */
   self.handleMediaChange = function(mql) {
     if (mql.matches) {
-      console.log("media query matches");
       document.getElementById('controlUI-min').style.display = "none";
       document.getElementById('controlUI').style.display = "block";
       document.getElementById("hidebutton").style.display = "none;";
       document.getElementById("textinput").className = "map-search";
 
     } else {
-      console.log("media query DOES NOT match");
       document.getElementById('controlUI-min').style.display = "block";
       document.getElementById('controlUI').style.display = "none";
     }
@@ -182,7 +180,6 @@ var MapViewModel = function() {
    */
   self.search = function(value) {
     var matchingVenueNames = [];
-    console.log("Search function called");
     $.each(self.mapMarkers(), function() {
       if (this.marker.title.toLowerCase().indexOf(value.toLowerCase()) != -1) {
         matchingVenueNames.push(this.marker.title);
@@ -190,12 +187,8 @@ var MapViewModel = function() {
       } else {
         this.marker.setMap(null);
       }
-      console.log("this=");
-      console.log(this);
     });
 
-    console.log("Matching venues:");
-    console.log(matchingVenueNames);
     return matchingVenueNames;
   };
 
@@ -205,20 +198,13 @@ var MapViewModel = function() {
    with the listview entry (by title) will turn blue.
    */
   self.selectChange = function(event) {
-    console.log("Selection change:");
-    console.log(event.srcElement.value);
     self.unflagAllMarkers();
     $.each(self.mapMarkers(), function() {
-      console.log(this.marker);
       if (this.marker.title == event.srcElement.value) {
         this.marker.setIcon(iconBase + 'blue_MarkerA.png');
-        console.log("self.userMessage=");
-        console.log(self.userMessage);
         self.userMessage("Status: Venue selected.");
         self.searchQuery(this.marker.title);
-        // TODO: Recenter on this pin here
         self.map.setCenter(this.marker.position);
-        // TODO: handle info window here
        self.handleInfoWindow(this.marker.position, this.content);
       }
     });
@@ -239,7 +225,7 @@ var MapViewModel = function() {
     var point2 = new google.maps.Point(
         ( (typeof(offsetx) == 'number' ? offsetx : 0) / Math.pow(2, self.map.getZoom()) ) || 0,
         ( (typeof(offsety) == 'number' ? offsety : 0) / Math.pow(2, self.map.getZoom()) ) || 0
-    );  
+    );
     self.map.setCenter(self.map.getProjection().fromPointToLatLng(new google.maps.Point(
         point1.x - point2.x,
         point1.y + point2.y
@@ -273,13 +259,13 @@ var MapViewModel = function() {
                   } else {
                     category = "";
                   }
-                  
+
                   if (this.location.address) {
                       address = '<p class="subinfo">'+this.location.address+'<br>';
                   } else {
                       address = "";
                   }
-                  
+
                   if (this.rating) {
                       rating = '<span class="rating">'+this.rating+'</span>';
                   } else {
@@ -287,7 +273,7 @@ var MapViewModel = function() {
                   }
                   var markerpos = new google.maps.LatLng(this.location.lat, this.location.lng, false);
                   var imageloc = this.location.address + ' ' + this.location.city + ', ' + this.location.state + ' ' + this.location.country;
-                  var appendeddatahtml = '<div class="venue">' + 
+                  var appendeddatahtml = '<div class="venue">' +
                                         '<h2>' +
                                           this.name +
                                           category +
@@ -313,9 +299,6 @@ var MapViewModel = function() {
 
                   google.maps.event.addListener(marker, 'click', (function(marker, htmlcontent) {
                     return function() {
-                      console.log("Marker clicked:");
-                      console.log(marker);
-                      console.log("content="+htmlcontent);
                       self.unflagAllMarkers();
                       marker.setIcon(iconBase + 'red_MarkerA.png');
                       self.handleInfoWindow(marker.position, htmlcontent);
@@ -328,7 +311,6 @@ var MapViewModel = function() {
             self.userMessage("Status: Waiting for user activity.");
           },
           error: function() {
-            console.log("In foursquare error");
             document.getElementById('message-div').className = "message-bad";
             self.userMessage("Status: Failed to retireve Foursquare venues.");
           }
@@ -341,7 +323,6 @@ var MapViewModel = function() {
    @param {string} content HTML describing the location.
    */
   self.handleInfoWindow = function(latlng, content) {
-	  // TODO: for some reason I can't use self.offsetCenter to do this. It might be broken.
     self.map.setCenter(latlng);
     self.infoWindow.setContent(content);
     self.infoWindow.setPosition(latlng);
@@ -378,11 +359,6 @@ var MapViewModel = function() {
       var controlUImin = document.getElementById('controlUI-min');
       self.map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(controlUImin);
 
-      google.maps.event.addListener(self.map, 'dblclick', function(event) {       
-          console.log("Map double-clicked. Event follows:");
-          console.log(event);
-      });
-
       self.infoWindow = new google.maps.InfoWindow({pixelOffset: new google.maps.Size(0, -25)});
 
       /**
@@ -407,7 +383,6 @@ var MapViewModel = function() {
        @description When a resize event occurs, perform the offset again to keep the home location in view.
        */
       google.maps.event.addDomListener(window, 'resize', function() {
-        console.log("I see resize event");
         self.map_recenter(myLocation, 50, 50);
       });
 
@@ -424,7 +399,6 @@ var MapViewModel = function() {
        @description Reset the searchQuery, deselect anything selected in the list, and unflag all markers when the "Reset selection" button is clicked.
        */
       document.getElementById('clearbutton').addEventListener("click", function() {
-        console.log("clear button clicked");
         self.searchQuery("");
         document.getElementById("selectbox").selectedIndex = -1;
         self.unflagAllMarkers();
@@ -433,16 +407,14 @@ var MapViewModel = function() {
       });
 
       document.getElementById('showbutton').addEventListener("click", function() {
-        console.log("mobile show full ui button clicked");
         document.getElementById('controlUI-min').style.display = "none";
         document.getElementById("textinput").className = "map-search-min";
         document.getElementById("hidebutton").className = "map-search-dismiss";
         document.getElementById("hidebutton").style.display = "inline";
         document.getElementById('controlUI').style.display = "block";
       });
-	  
+
       document.getElementById('hidebutton').addEventListener("click", function() {
-        console.log("mobile hide full ui button clicked");
         document.getElementById('controlUI').style.display = "none";
         document.getElementById('controlUI-min').style.display = "block";
       });
@@ -450,8 +422,6 @@ var MapViewModel = function() {
       self.markOwnLocation();
       self.getVenues();
     } else {
-      // We can't actually get here because a different failure will have already occurred, but just in case...
-      console.log("Uh-oh!!! No Google map!!!!!");
       document.getElementById('message-div').className = "message-bad";
       document.getElementById('message-div').innerText = "Status: Google Maps API did not load.";
     }
@@ -471,7 +441,6 @@ if (typeof google !== 'undefined') {
   // Explicit knockout subscription to changes in searchQuery in order to re-filter the viewlist each time
   myMapViewModel.searchQuery.subscribe(myMapViewModel.filterList);
 } else {
-  console.log("Uh-oh!! google is undefined!!!!!");
   document.getElementById('textinput').style.display = "none";
   document.getElementById('selectbox').style.display = "none";
   document.getElementById('clearbutton').style.display = "none";
