@@ -6,6 +6,15 @@
  Version 1.0.1 address grading comments from first turn-in.
  */
 
+
+"use strict";
+
+// Adding these comments makes JShint complain less.
+/* global google */
+/* global ko */
+/* global console */
+/* global $ */
+
 /**
  @function MapViewModel
  @description This function contains the Knockout viewmodel
@@ -119,7 +128,7 @@ var MapViewModel = function() {
       document.getElementById('controlUI-min').style.display = "block";
       document.getElementById('controlUI').style.display = "none";
     }
-  }
+  };
 
   // Add an event listener for media query state changes
   self.mql.addListener(self.handleMediaChange);
@@ -236,7 +245,7 @@ var MapViewModel = function() {
         point1.y + point2.y
     )));
 	self.map.fitBounds(myBounds);
-  }
+  };
 
   /**
    @function getVenues
